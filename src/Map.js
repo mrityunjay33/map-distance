@@ -210,7 +210,7 @@ const Map = () => {
   }, [map]);
   return (
     <div>
-      <div id="map" style={{ height: "500px" }} />
+      <div id="map" style={{ height: "100vh" }} />
       <div id="distance" className="distance-container" />
     </div>
   );
