@@ -58,7 +58,7 @@ const Map = () => {
           type: "circle",
           source: "geojson",
           paint: {
-            "circle-radius": 5,
+            "circle-radius": 7,
             "circle-color": "#000",
           },
           filter: ["in", "$type", "Point"],
@@ -74,6 +74,22 @@ const Map = () => {
           paint: {
             "line-color": "#000",
             "line-width": 2.5,
+            "line-offset": -5,
+          },
+          filter: ["in", "$type", "LineString"],
+        });
+        map.addLayer({
+          id: "measure-lines2",
+          type: "line",
+          source: "geojson",
+          layout: {
+            "line-cap": "round",
+            "line-join": "round",
+          },
+          paint: {
+            "line-color": "red",
+            "line-width": 2.5,
+			      "line-offset": 5,
           },
           filter: ["in", "$type", "LineString"],
         });
