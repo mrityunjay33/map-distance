@@ -89,7 +89,7 @@ const Map = () => {
           paint: {
             "line-color": "red",
             "line-width": 2.5,
-			      "line-offset": 5,
+            "line-offset": 5,
           },
           filter: ["in", "$type", "LineString"],
         });
